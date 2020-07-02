@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>360商城首页</title>
+    <link rel="stylesheet" href="../css/register.css"/>
+    <script src="../script/register.js"></script>
+  </head>
+  <body>
+    <!-- 头部 -->
+    <nav>
+      <div class="topwrap">
+        <div class="top">
+          <ul class="tople">
+            <li><a href="">帮助中心</a> </li>
+            <li><a href="">收藏</a></li>
+            <li><a href="">360官网</a></li>
+          </ul>
+          <ul class="topri">
+            <li><a href="./land.html">登录</a></li>
+            <li><a href="./register.html">注册</a></li>
+            <li><a href="">360手机商城</a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="topft">
+        <ul class="topft-le">
+          <li><a href="./index.html"></a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 注册表单 -->
+    <div id="land_warp">
+        <div class="land_list">
+              <div class="list_con">
+                <p>使用手机号注册后，你可以通过手机号加密码登录，也可以使用短信验证码进行登录</p>
+                <form action="1.php" method="post" id="form_list">
+                  <div class="list_1">
+                    <label>账号</label>
+                    <input type="text" name="" placeholder="仅支持中国大陆手机号" maxlength="11" autofocus="" id="mytel" onblur="is_tel()">
+                    <span id="tel_msg"></span>		
+                  </div>
+                  <div class="list_1">
+                    <label>密码</label>
+                    <input type="password" name="" placeholder="8-16位数字和字母" id="mypwd" onblur="is_pwd()">
+                    <span id="tel_pwd"></span>	
+                  </div>
+                  
+                  <div class="list_1">
+                    <label>校验</label>
+                    <input type="password" name="" placeholder="再次输入密码" id="mypass" onblur="is_pass()">
+                    <span id="tel_pass"></span>	
+                  </div>
+                  <div class="list_2">
+                    <label>验证</label>
+                    <input type="telephone" name="" onclick="draw()" placeholder="输入验证码">
+                    <canvas id="c1"></canvas>
+                  <div class="list_3">
+                    
+                    <input type="checkbox" name="" id="mycheck" value="" checked="" onclick="is_agree()" />
+                    <span>我已阅读并同意</span><a href="#">《360用户协议》</a>
+                  </div>
+                  </div>
+                  <div class="list_4">
+                    <input type="button" name="" value="注册" id="mybtn">
+                    <input type="reset" name="" value="重置" id="mybtn1">
+                  </div>			
+                </form>                
+              </div>	
+        </div>
+    </div>
+    <!-- 底部页脚 -->
+    <footer>
+      <!-- 白色部分 -->
+      <div class="foot-tp">
+        <div class="tp-box">
+          <p class="tp-title">关于商城</p>
+          <p class="tp-text">
+            360商城是奇虎360公司的官方电商平台，主要经营360安全智能设备，以及相关领域消费品。提供最新的360智能设备，最贴心的售后服务，360社区一手评测资讯，享受360安全、安心、放心的购物体验。
+          </p>
+          <div class="follow-box">
+            <span class="folow-bt">关于我们</span>
+            <span class="icon-wx"></span>
+            <span class="icon-wb"></span>
+          </div>
+        </div>
+        <div class="lnk-box">
+          <p class="tp-title">售后服务</p>
+          <a href="">7日无理由退货</a>
+          <a href="">质量问题15日内换货</a>
+          <a href="">保修条款</a>
+          <a href="">服务流程</a>
+          <a href="">许可协议</a>
+          <a href="">隐私政策</a>
+        </div>
+        <div class="lnk-box">
+          <p class="tp-title">帮助中心</p>
+          <a href="">用户注册</a>
+          <a href="">会员说明</a>
+          <a href="">登录与密码找回</a>
+          <a href="">购买指南</a>
+          <a href="">支付方式</a>
+          <a href="">配送与说明</a>
+          <a href="">招商合作</a>
+        </div>
+        <div class="download">
+          <p class="tp-title">扫码下载APP</p>
+          <a href="" class="app-box">
+            <img src="../imgs/er.png" alt="" />
+          </a>
+        </div>
+        <div class="contact-box">
+          <p class="tp-title">联系我们</p>
+          <p class="big-text">400-1555-360</p>
+          <p class="small-text">周一至周日 9:00-21:00（仅收市话费）</p>
+        </div>
+      </div>
+      <!-- 黑色部分 -->
+      <div class="copyright-floor">
+        <div class="foot-bo">
+          <div class="sever">
+            <a href="" class="server-item">
+              <i class="icon-return"></i>
+              7天无理由退货
+            </a>
+            <a href="" class="server-item">
+              <i class="icon-return icon-exchange"></i>
+              15天免费换货
+            </a>
+            <a href="" class="server-item">
+              <i class="icon-return icon-package"></i>
+              满99包邮
+            </a>
+          </div>
+          <div class="copyright">
+            <p>©2019-2020 mall.360.cn版权所有</p>
+            <p>京ICP备08010314号-43 营业执照 京公网安备11000002000006号</p>
+            <p class="copy">
+              公司名称：北京视觉世界科技有限公司 |
+              社会统一信用代码：91110105336460203N | 食品经营许可证<br />
+              公司地址：北京市朝阳区酒仙桥路6号院2号楼1至17层102号内5层501 |
+              联系方式：400-1555-360
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

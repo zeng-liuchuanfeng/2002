@@ -1,0 +1,89 @@
+a,
+u,
+ins {
+  text-decoration: none; }
+
+html {
+  background: #f5f5f5; }
+
+.listCon {
+  width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 50px; }
+
+.goodsCom {
+  width: 291px;
+  height: 415px;
+  float: left;
+  margin: 15px 1.5% 0 0;
+  width: 23.5%;
+  background: #ffffff; }
+
+.icon {
+  margin: 5% 44px 0;
+  width: 70%;
+  border: 0;
+  vertical-align: middle; }
+
+.title {
+  color: #333;
+  font-size: 14px;
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.priceCon {
+  width: 291px;
+  height: 39px;
+  margin-top: 10px;
+  color: #9b9b9b;
+  font-size: 13px;
+  text-align: center; }
+
+.price {
+  color: #ea2727;
+  font-size: 20px;
+  line-height: 36px; }
+
+.oldPrice {
+  color: #9b9b9b;
+  font-size: 13px;
+  line-height: 36px;
+  text-decoration: line-through; }
+
+.soldSpan {
+  border: 1px solid #EA2727;
+  border-radius: 5px;
+  display: inline-block;
+  height: 10px;
+  position: relative;
+  width: 70%; }
+
+.soldSpan > span {
+  display: block;
+  background-color: #EA2727;
+  border-radius: 4px;
+  height: 10px; }
+
+.soldText {
+  color: #333;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 5px; }
+
+.button {
+  background-color: #F30806;
+  background-image: linear-gradient(-159deg, #F30806 0, #FC3410 76%, #FF4314 100%);
+  border-radius: 20px;
+  box-shadow: 0 2px 6px 0 #F6B6B2;
+  color: #fff;
+  font-size: 15px;
+  height: 30px;
+  line-height: 30px;
+  margin: 20px auto 0;
+  text-align: center;
+  width: 95px;
+  display: block; }
