@@ -1,0 +1,366 @@
+@charset "UTF-8";
+html,
+body,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dt,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px;
+  font-family: "微软雅黑"; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  font-weight: normal; }
+
+b,
+strong {
+  font-weight: normal; }
+
+i,
+em {
+  font-style: normal; }
+
+a,
+u,
+ins {
+  text-decoration: none; }
+
+img {
+  border: 0;
+  font-size: 0; }
+
+input,
+fieldset {
+  outline: none;
+  /* 取消蓝色选中边框 */
+  border: 0; }
+
+.clear_fix:after {
+  content: ".";
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  visibility: hidden; }
+
+.clear_fix {
+  zoom: 1;
+  /* 用来兼容IE6、7 的高度自适应的问题的 */ }
+
+.top,
+.topft,
+.foot-tp,
+.foot-bo {
+  margin: 0 auto; }
+
+/* 头部 */
+nav {
+  height: 142px;
+  width: 100%; }
+
+.topwrap {
+  overflow: hidden;
+  height: 40px;
+  background: #333333; }
+
+.top {
+  width: 1180px;
+  height: 40px; }
+
+.tople li {
+  float: left;
+  line-height: 40px;
+  margin-right: 25px; }
+
+.tople li a {
+  color: #ffffff;
+  font-size: 12px;
+  height: 40px;
+  display: inline-block; }
+
+.topri {
+  float: right;
+  height: 40px; }
+
+.topri li {
+  float: left;
+  line-height: 40px;
+  margin-left: 25px; }
+
+.topri li a {
+  color: #ffffff;
+  font-size: 12px;
+  height: 40px;
+  display: inline-block; }
+
+.topri > li:nth-last-child(1) a {
+  height: 40px;
+  width: 30px;
+  background: url(../imgs/2.png) no-repeat -110px -40px;
+  box-sizing: border-box; }
+
+/* top的下面 */
+.topft {
+  width: 1180px;
+  height: 102px;
+  background: #ffffff; }
+
+.topft-le li {
+  float: left;
+  line-height: 102px;
+  margin-right: 20px; }
+
+.topft-le li a {
+  font-size: 18px;
+  color: #333333; }
+
+.topft-le li:nth-child(1) a {
+  width: 180px;
+  height: 36px;
+  display: block;
+  background: url(../imgs/1.png) no-repeat;
+  margin-top: 36px; }
+
+/* 底部页脚 */
+footer {
+  width: 100%;
+  height: 582px; }
+
+/* 白色部分 */
+.foot-tp {
+  width: 1180px;
+  height: 381px;
+  box-sizing: border-box;
+  padding: 60px 0; }
+
+.tp-box {
+  width: 264px;
+  height: 247px;
+  margin-right: 60px;
+  float: left; }
+
+.tp-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 27px;
+  color: #333333; }
+
+.tp-text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  color: #333333; }
+
+.follow-box {
+  border-top: 1px solid #666666;
+  line-height: 30px;
+  margin-top: 20px;
+  padding-top: 19px; }
+
+.folow-bt {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top; }
+
+.icon-wx {
+  height: 30px;
+  width: 30px;
+  margin-left: 15px;
+  vertical-align: top;
+  display: inline-block;
+  background: url(../imgs/2.png) no-repeat -8px -160px; }
+
+.icon-wb {
+  height: 30px;
+  width: 30px;
+  margin-left: 15px;
+  vertical-align: top;
+  display: inline-block;
+  background: url(../imgs/2.png) no-repeat -40px -160px; }
+
+.lnk-box {
+  width: 129px;
+  height: 231px;
+  float: left;
+  margin-right: 60px;
+  text-align: left; }
+
+.lnk-box > a {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  color: #666; }
+
+.download {
+  text-align: center;
+  float: left; }
+
+.app-box {
+  display: block;
+  height: 128px;
+  width: 128px; }
+
+.contact-box {
+  border-left: 1px solid #979797;
+  float: right;
+  min-height: 230px;
+  text-align: center;
+  width: 300px; }
+
+.big-text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px; }
+
+.small-text {
+  color: #999;
+  font-size: 14px;
+  line-height: 30px; }
+
+/* 黑色部分 */
+.copyright-floor {
+  width: 100%;
+  height: 200px;
+  background: #333333; }
+
+.foot-bo {
+  width: 1180px;
+  height: 200px; }
+
+.sever {
+  border-bottom: 1px solid #666;
+  padding: 25px 0;
+  text-align: center; }
+
+.server-item {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 30px;
+  margin-right: 150px;
+  vertical-align: top; }
+
+.icon-return {
+  height: 30px;
+  margin-right: 5px;
+  vertical-align: top;
+  width: 32px;
+  display: inline-block;
+  background: url(../imgs/2.png) no-repeat -10px -197px; }
+
+.icon-exchange {
+  background: url(../imgs/2.png) no-repeat -45px -197px; }
+
+.icon-package {
+  background: url(../imgs/2.png) no-repeat -80px -197px; }
+
+.copyright {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 18px 0 21px;
+  text-align: center;
+  color: #ffffff; }
+
+.copy {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px; }
+
+.details-top {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #333333; }
+  .details-top .details-class {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto; }
+    .details-top .details-class .box {
+      width: 230px;
+      height: 100%;
+      background: #333333;
+      color: #ffffff;
+      font-size: 16px;
+      text-align: center;
+      line-height: 50px; }
+      .details-top .details-class .box .icon-all {
+        background: url(../imgs/class.png) no-repeat;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-size: 15px 15px;
+        vertical-align: -2px; }
+
+.cartwrap {
+  width: 100%;
+  min-height: 250px;
+  background: #f2f2f2;
+  padding: 20px 0 30px; }
+  .cartwrap .th {
+    width: 1020px;
+    height: 50px;
+    background: white;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 700; }
+    .cartwrap .th input {
+      width: 13px;
+      height: 13px;
+      float: left;
+      margin: 19px 5px 0 10px; }
+    .cartwrap .th label {
+      float: left; }
+    .cartwrap .th ul {
+      float: left; }
+      .cartwrap .th ul li {
+        float: left;
+        text-align: center; }
+        .cartwrap .th ul li:first-child {
+          width: 352px; }
+        .cartwrap .th ul li:nth-child(2) {
+          width: 185px; }
+        .cartwrap .th ul li:nth-child(3) {
+          width: 108px; }
+        .cartwrap .th ul li:nth-child(4) {
+          width: 102px; }
+        .cartwrap .th ul li:nth-child(5) {
+          width: 108px; }
+        .cartwrap .th ul li:nth-child(6) {
+          width: 103px; }

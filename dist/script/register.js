@@ -1,6 +1,7 @@
 function is_agree(){
     var mycheck=document.getElementById('mycheck');
-    var mybtn=document.getElementById('mybtn');
+    mybtn=document.getElementById('mybtn');
+    mybtn.addEventListener("click",mybtnClick);
     if(mycheck.checked){
         mybtn.disabled=false;
         mybtn.style.border="1px solid deepskyblue";
@@ -16,9 +17,9 @@ function is_agree(){
 }
 
 function is_tel(){
-    var mytel=document.getElementById("mytel").value;
+    mytel=document.getElementById("mytel").value;
     var tel_msg=document.getElementById("tel_msg");
-    var myreg=/^1[0-9]{10}$/;
+    myreg=/^1[0-9]{10}$/;
     if(myreg.test(mytel)){
         tel_msg.innerHTML="输入的手机号正确";
         tel_msg.style.color="lawngreen";
@@ -28,9 +29,9 @@ function is_tel(){
     }
 }
 function is_pwd(){
-    var mypwd=document.getElementById("mypwd").value;
+    mypwd=document.getElementById("mypwd").value;
     var tel_pwd=document.getElementById("tel_pwd");
-    var myreg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/;
+    myreg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/;
     if(myreg.test(mypwd)){
         tel_pwd.innerHTML="输入的密码合格";
         tel_pwd.style.color="lawngreen";
@@ -42,8 +43,8 @@ function is_pwd(){
 
 
 function is_pass(){
-    var mypass=document.getElementById("mypass").value;
-    var mypwd=document.getElementById("mypwd").value;
+    mypass=document.getElementById("mypass").value;
+    mypwd=document.getElementById("mypwd").value;
     var tel_pass=document.getElementById("tel_pass");
     if(mypass==mypwd){
         tel_pass.innerHTML="两次密码相同";
@@ -53,6 +54,28 @@ function is_pass(){
         tel_pass.style.color="red";
     }
     
+}
+
+function ajax(type,data){
+    var xhr=new XMLHttpRequest();
+    xhr.addEventListener("readystatechange",readyStateHandler);
+    xhr.open("POST","http://localhost:8000/"+type);
+    xhr.send(JSON.stringify(data));
+    function readyStateHandler(e){
+        if(this.readyState === 4 && this.status === 200){
+            console.log(this.response);
+            if(this.response === "注册成功"){
+                alert("注册成功跳转至登陆页面");
+                window.location.href="./land.html";
+            }else{
+                alert("用户名或密码错误，请重新输入")
+            }
+        }
+    }
+}
+
+function mybtnClick(e){
+        ajax("singnUp",{user : mytel , password : mypwd})
 }
 
 function rn(min,max){
