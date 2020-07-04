@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>360商城首页</title>
     <link rel="stylesheet" href="../css/land.css" />
+    <script src="../script/land.js" defer></script>
   </head>
   <body>
     <!-- 头部 -->
@@ -33,21 +34,21 @@
     </nav>
     <!-- 登录表单 -->
     <div class="login_con">
-        <form role="form" action="{:url('stu_logincheck')}" method="post">
+        <form role="form" method="post">
             <!-- 用户名 -->
-            <div class="username">
+            <div class="username" id="userdiv">
                 <!--<label> Username</label>-->
                 <input type="text" id="username" name="username" placeholder="手机号/用户名/邮箱" />
             </div>
             
             <!--密码-->
-            <div class="password">
+            <div class="password" id="passdiv">
                 <input type="password" name="password" id="password" placeholder="密码" required=""/>
             </div>
             
             <!--登录-->
             <div class="tijiao">
-                <input type="submit" value="登录"/>
+                <input id="submit" type="button" value="登录"/>
             </div>
             
         </form>

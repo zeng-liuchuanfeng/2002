@@ -244,7 +244,6 @@ nav {
 .login_con input {
   width: 100%;
   height: 42px;
-  margin: 15px;
   padding: 10px;
   font-size: 14px;
   border: 1px solid #DDDDDD; }
@@ -261,6 +260,34 @@ nav {
 .login_bottom a {
   color: #6F6F6F;
   font-weight: 400; }
+
+#userdiv {
+  width: 402px;
+  height: 44px;
+  margin-bottom: 15px; }
+
+.username {
+  border: 1px solid transparent; }
+
+.usererror {
+  border: 1px solid red; }
+
+.usersucc {
+  border: 1px solid #36B447; }
+
+#passdiv {
+  width: 402px;
+  height: 44px;
+  margin-bottom: 15px; }
+
+.password {
+  border: 1px solid transparent; }
+
+.passerror {
+  border: 1px solid red; }
+
+.passsucc {
+  border: 1px solid #36B447; }
 
 /* 底部页脚 */
 footer {

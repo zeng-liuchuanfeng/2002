@@ -1,6 +1,6 @@
 function is_agree(){
     var mycheck=document.getElementById('mycheck');
-    mybtn=document.getElementById('mybtn');
+    var mybtn=document.getElementById('mybtn');
     mybtn.addEventListener("click",mybtnClick);
     if(mycheck.checked){
         mybtn.disabled=false;
@@ -19,7 +19,7 @@ function is_agree(){
 function is_tel(){
     mytel=document.getElementById("mytel").value;
     var tel_msg=document.getElementById("tel_msg");
-    myreg=/^1[0-9]{10}$/;
+    var myreg=/^1[0-9]{10}$/;
     if(myreg.test(mytel)){
         tel_msg.innerHTML="输入的手机号正确";
         tel_msg.style.color="lawngreen";
@@ -31,7 +31,7 @@ function is_tel(){
 function is_pwd(){
     mypwd=document.getElementById("mypwd").value;
     var tel_pwd=document.getElementById("tel_pwd");
-    myreg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/;
+    var myreg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/;
     if(myreg.test(mypwd)){
         tel_pwd.innerHTML="输入的密码合格";
         tel_pwd.style.color="lawngreen";
@@ -43,8 +43,8 @@ function is_pwd(){
 
 
 function is_pass(){
-    mypass=document.getElementById("mypass").value;
-    mypwd=document.getElementById("mypwd").value;
+    var mypass=document.getElementById("mypass").value;
+    var mypwd=document.getElementById("mypwd").value;
     var tel_pass=document.getElementById("tel_pass");
     if(mypass==mypwd){
         tel_pass.innerHTML="两次密码相同";
@@ -63,7 +63,6 @@ function ajax(type,data){
     xhr.send(JSON.stringify(data));
     function readyStateHandler(e){
         if(this.readyState === 4 && this.status === 200){
-            console.log(this.response);
             if(this.response === "注册成功"){
                 alert("注册成功跳转至登陆页面");
                 window.location.href="./land.html";
